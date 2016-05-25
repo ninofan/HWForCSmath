@@ -1,0 +1,142 @@
+\documentclass{seminar}
+\usepackage{fancybox,pstricks,semcolor,epsfig,epsf,float,pifont,/home/hastie/texlib/MRCII}
+\usepackage{psfrag}
+\usepackage{amsmath}
+
+\markright{Dimension Reduction}
+
+
+\def\cov{{\rm Cov}}
+\def\ev{{\rm E}}
+\def\bA{{\bf A}}
+\def\bB{{\bf B}}
+\def\bW{{\bf W}}
+\def\bU{{\bf U}}
+\def\bV{{\bf V}}
+\def\bD{{\bf D}}
+\def\bSigma{{\boldsymbol\Sigma}}
+\def\bI{{\bf I}}
+\def\Pr{{\rm Pr}}
+
+
+\def\err{{\rm err}}
+\def\bx{{\bf X}}
+\def\bV{{\bf V}}
+\def\bX{{\bf X}}
+\def\Prob{{\rm Pr}}
+\def\subS{{\cal S}}
+\def\Xsub{X_\subS}
+\def\subC{{\cal C}}
+\def\ev{{\rm E}}
+\def\Pr{{\rm Pr}}
+\def\deq{\buildrel \rm def \over =}
+\def\balpha{\mathbf{\alpha}}
+\def\bbeta{\mathbf{\beta}}
+\def\bSigma{\mathbf{\Sigma}}
+
+
+
+
+
+\begin{document}
+
+
+\begin{slide*}
+  \heading{Principal Components}
+ Suppose we have $N$ measurements on each of  $p$ variables $X_j,\;j=1,\ldots,p$. There are several equivalent approaches to principal components:
+\begin{itemize}
+\bitem Given $X=(X_1,\ldots X_p)$, produce a derived (and small) set of uncorrelated  variables $Z_k=X\alpha_k,\;k=1,\ldots,q<p$ that are linear combinations of the original variables, and that explain most of the variation in the original set.
+\bitem Approximate the original set of $N$ points in $\R^p$ by a least-squares optimal linear manifold of co-dimension $q<p$.
+\bitem Approximate the $N\times p$ data matrix $\bf X$ by the best  rank-$q$ matrix $\hat {\bf X}_{(q)}$. This is the usual motivation for the SVD.
+\end{itemize}
+\end{slide*}
+\begin{slide*}
+  \heading{PC: Derived Variables}
+\begin{psfrags}
+  \psfrag{x1}{\scriptsize $X_1$} \psfrag{x2}{\scriptsize $X_2$}
+  \centerline{\epsfig{file=figLM.pc.ps,width=.8\textwidth}}
+\end{psfrags}
+$Z_1=X\alpha_1$ is the projection of the data onto the longest {\red direction}, and has the largest variance amongst all such normalized projections.
+
+$\alpha_1$ is the eigenvector corresponding to the largest eigenvalue of $\hat\bSigma$, the sample covariance matrix of $X$.
+$Z_2$ and $\alpha_2$ correspond to the second-largest eigenvector.
+
+\end{slide*}
+\begin{slide*}
+  \heading{PC: Least Squares Approximation}
+    \centerline{ \epsfig{file=xgsvd.ps,width=.7\textwidth}}
+ Find the linear manifold $f(\lambda)= \mu + \bV_q \lambda$ that best approximates the data in a least-squares sense:
+\[   \min_{\mu,\{\lambda_i\},\;\bV_q}\sum_{i=1}^N\|x_i-\mu-\bV_q\lambda_i\|^2.
+\]
+Solution: $\mu=\bar x$, $v_k=\alpha_k$, $\lambda_k=\bV_q^T(x_i-\bar x)$.
+\end{slide*}
+\begin{slide*}
+  \heading{PC: Singular Value Decomposition}
+Let $\tilde\bX$ be the $N\times p$ data matrix with centered columns (assume $N>p$).
+\[ \tilde\bX={\bf U}{\bf D}\bV^T\]
+is the {\em SVD} of $\tilde\bX$, where
+\begin{itemize}
+\bitem ${\bf U}$ is $N\times p$ orthogonal, the left singular vectors.
+\bitem  ${\bf V}$ is $p\times p$ orthogonal, the right singular vectors.
+\bitem $\bf D$ is diagonal, with $d_1\geq d_2\geq \ldots \geq d_p \geq 0$, the singular values.
+\end{itemize}
+The SVD always exists, and is unique up to signs. {\em The columns of $\bV$ are the principal components, and $Z_j = U_jd_j$.}
+
+Let ${\bf D_q}$ be $\bf D$, with all but the first $q$ diagonal elements set to zero. Then $\hat \bX_q={\bf U}{\bf D}_q\bV^T$ solves
+\[\min_{\text{rank}(\hat{\bX}_q)=q}||\tilde{\bx}-\hat \bX_q||\]
+\end{slide*}
+\begin{slide*}
+  \heading{PC: Example --- Digit Data}
+ \epsfig{file=digit.svd1.ps,width=\textwidth}
+130 threes, a subset of 638 such threes and part of the handwritten digit dataset.
+Each three is a $16\times 16$ greyscale image, and the variables $X_j,\;j=1,\ldots,256$ are the greyscale values for each pixel.
+\end{slide*}
+\begin{slide*}
+  \heading{Rank-2 Model for Threes}
+    \centerline{\psfig{file=digit.svd2.ps,width=.65\textwidth}\raisebox{.15\textwidth}{\psfig{file=digit.svd3.ps,width=.35\textwidth}}}
+
+Two-component model has the form
+\begin{eqnarray*}
+  \hat{f}(\lambda)&=&\bar{x} + \lambda_1v_1 +\lambda_2v_2\\
+  &=&\raisebox{-.15in}{\epsfig{file=digit.svd41.ps,width=.3in}}+\lambda_1\cdot
+  \raisebox{-.15in}{\epsfig{file=digit.svd42.ps,width=.3in}}+\lambda_2\cdot \raisebox{-.15in}{\epsfig{file=digit.svd43.ps,width=.3in}}.
+\end{eqnarray*}
+Here we have displayed the first two principal component directions,
+$v_1$ and $v_2$, as images.
+\end{slide*}
+\begin{slide*}
+  \heading{SVD: Expression Arrays}
+The rows are genes (variables) and the columns are observations
+(samples, DNA arrays). Typically 6-10K genes, 50 samples.
+
+\bigskip
+
+\centerline{\epsfig{file=/home/tibs/newbook/chap1/dougraw100.ps,width=.4\textwidth}}
+\end{slide*}
+\begin{slide*}
+  \heading{Eigengenes}
+  \begin{itemize}
+  \bitem The first principal component or {\em eigengene} is the linear
+    combination of the genes showing the most variation over the
+    samples.
+  \bitem The individual gene loadings for each eigengene  or {\em
+    eigenarrays} can have
+    biological meaning.
+  \bitem The sample values for the eigengenes show useful
+    low-dimensional projections.
+  \end{itemize}
+\end{slide*}
+\begin{slide*}
+  \heading{Example: NCI Cancer Data}
+{\small
+\centerline{\blue First two eigengenes}
+{\scriptsize Points are colored according to NCI cancer classes}
+
+\centerline{\epsfig{file=dnasvd1.ps,height=.4\textheight}}
+\centerline{\blue First two eigenarrays}
+\centerline{\epsfig{file=dnasvd2.ps,height=.38\textheight}}
+}
+\end{slide*}
+
+\end{document}
+

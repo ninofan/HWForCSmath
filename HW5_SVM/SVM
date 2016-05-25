@@ -1,0 +1,101 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import scipy as sp
+from scipy.stats import norm
+import random
+
+num_data = 20
+#input data
+t1 = np.zeros([2,num_data/2])
+t11 = np.arange(0,1,2/num_data)
+t1[0,:] = t11
+t12 = 1 - t11
+t1[1,:] = t12
+t1 = t1.T
+t2 = np.zeros([2,num_data/2])
+t21 = np.arange(0,1,2/num_data)
+t2[0,:] = t21
+t22 = -1 - t21
+t2[1,:] = t22
+t2 = t2.T
+x = np.concatenate((t1,t2),axis = 0)
+y = np.concatenate((np.ones([num_data/2,1]),-np.ones([num_data/2,1])),axis = 0)
+x = x + norm.rvs(0, size=[num_data,2], scale = 0.1)
+
+plt.scatter(x[:,0],x[:,1])
+
+
+c = 10000
+alpha = np.zeros([num_data,1])
+alpha_old = np.zeros([num_data,1])
+b = 0
+tol = 0 # tolerance
+passes = 0
+max_passes = 1e3 # max # iterations
+alpha_previous = alpha
+while passes < max_passes:
+    num_changed_alphas = 0
+    for i in np.arange(num_data):
+        errori = b - y[i]
+        for j in np.arange(num_data):
+            errori += alpha[j] * y[j] * np.dot(x[i,:],x[j,:])
+        if ((y[i]*errori < -tol) & (alpha[i] < c)) | ((y[i]*errori > tol) & (alpha[i] > 0)):
+            j = random.randint(0,num_data - 1)
+            while j == i:
+                j = random.randint(0,num_data - 1)
+            errorj = b - y[j]
+            for k in np.arange(num_data):
+                errorj += alpha[k] * y[k] * np.dot(x[j,:],x[k,:])
+            alpha_old[i] = alpha[i]
+            alpha_old[j] = alpha[j]
+            if y[i] != y[j]:
+                L = max([0,alpha[j] - alpha[i]])
+                H = min([c,c + alpha[j] - alpha[i]])
+            else:
+                L = max([0,alpha[j] + alpha[i] - c])
+                H = min([c, alpha[j] + alpha[i]])
+            if L == H:
+                continue
+            eta = 2 * np.dot(x[i,:],x[j,:]) - np.dot(x[i,:],x[i,:]) - np.dot(x[j,:],x[j,:])
+            #if eta >= 0:
+             #   continue
+            alpha[j] = alpha[j] - y[j] * (errori - errorj) / eta
+            if alpha[j] > H:
+                alpha[j] = H
+            if alpha[j] < L:
+                alpha[j] = L
+            if abs(alpha[j] - alpha_old[j]) <= 1e-5:
+                continue
+            alpha[i] = alpha[i] + y[i] * y[j] * (alpha_old[j] - alpha[j])
+            b1 = b - errori - y[i] * (alpha[i] - alpha_old[i]) * np.dot(x[i,:],x[i,:]) - y[j] * (alpha[j] - alpha_old[j]) * np.dot(x[i,:],x[j,:])
+            b2 = b - errorj - y[i] * (alpha[i] - alpha_old[i]) * np.dot(x[i,:],x[j,:]) - y[j] * (alpha[j] - alpha_old[j]) * np.dot(x[j,:],x[j,:])
+            if (alpha[i] > 0) & (alpha[i] < c):
+                b = b1
+            elif (alpha[j] > 0) & (alpha[j] < c):
+                b = b2
+            else:
+                b = (b1 + b2) / 2
+            num_changed_alphas += 1
+    if num_changed_alphas == 0:
+        passes += 1
+    else:
+        passes = 0
+    #print(abs(alpha - alpha_previous).sum())
+    print(alpha.sum())
+    alpha_previous = alpha
+
+w = np.array([0.,0.])
+for i in np.arange(num_data):
+    w += alpha[i] * y[i] * x[i,:]
+print(w,b)
+
+x = np.arange(-1.5,1.5,0.001)
+y = (-b - w[0] * x) / w[1]
+
+plt.plot(x,y)
+
+plt.show()
+
+
+
+

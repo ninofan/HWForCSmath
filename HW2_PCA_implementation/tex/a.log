@@ -1,0 +1,421 @@
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.6.28)  17 MAY 2016 13:14
+entering extended mode
+**a.tex
+(E:\course\csmath\HW\HW2_PCA_implementation\tex\a.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(D:\CTEX\MiKTeX\tex\latex\seminar\seminar.cls
+Document Class: seminar 2008/10/15, 1.5
+Document Style: `seminar' v1.5 <2008/10/15> (tvz)
+\slidewidth=\dimen102
+\slideheight=\dimen103
+\footheight=\dimen104
+(D:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(D:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen105
+)
+(D:\CTEX\MiKTeX\tex\latex\seminar\sem-page.sty)
+\before@document=\toks14
+\after@document=\toks15
+\before@enddocument=\toks16
+\c@slide=\count88
+\slide@count=\count89
+\@slidebox=\box26
+\not@slidebox=\box27
+\slide@hook=\toks17
+\after@slide=\toks18
+\slide@footins=\insert233
+\slide@listdepth=\count90
+\saved@specials=\box28
+\before@newslide=\toks19
+\after@slidepage=\toks20
+\slidesep=\skip43
+\c@note=\count91
+\slideframewidth=\dimen106
+\slideframesep=\dimen107
+\semin=\dimen108
+\semcm=\dimen109
+)
+(D:\CTEX\MiKTeX\tex\latex\fancybox\fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box29
+\shadowsize=\dimen110
+\@Sbox=\box30
+\do@VerbBox=\toks21
+\the@fancyput=\toks22
+\this@fancyput=\toks23
+\EndVerbatimTokens=\toks24
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (D:\CTEX\MiKTeX\tex\latex\pstricks\pstricks.sty
+Package: pstricks 2011/10/31 v0.52 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(D:\CTEX\MiKTeX\tex\generic\pstricks\base\pstricks.tex
+(D:\CTEX\MiKTeX\tex\generic\xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(D:\CTEX\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(D:\CTEX\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+\XKV@depth=\count92
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+(D:\CTEX\MiKTeX\tex\generic\xkeyval\keyval.tex))))
+(D:\CTEX\MiKTeX\tex\generic\pstricks\base\pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count93
+\pstFP@xia=\count94
+\pstFP@xib=\count95
+\pstFP@xfa=\count96
+\pstFP@xfb=\count97
+\pstFP@rega=\count98
+\pstFP@regb=\count99
+\pstFP@regs=\count100
+\pstFP@times=\count101
+)
+\psLoopIndex=\count102
+
+`PSTricks' v2.24  <2012/02/09> (tvz)
+\pst@dima=\dimen111
+\pst@dimb=\dimen112
+\pst@dimc=\dimen113
+\pst@dimd=\dimen114
+\pst@dimg=\dimen115
+\pst@dimh=\dimen116
+\pst@dimm=\dimen117
+\pst@dimn=\dimen118
+\pst@dimo=\dimen119
+\pst@dimp=\dimen120
+\pst@hbox=\box31
+\pst@ibox=\box32
+\pst@boxg=\box33
+\pst@cnta=\count103
+\pst@cntb=\count104
+\pst@cntc=\count105
+\pst@cntd=\count106
+\pst@cntg=\count107
+\pst@cnth=\count108
+\pst@cntm=\count109
+\pst@cntn=\count110
+\pst@cnto=\count111
+\pst@cntp=\count112
+\@zero=\count113
+\pst@toks=\toks27
+(D:\CTEX\MiKTeX\tex\xelatex\xetex-pstricks\pstricks.con
+(D:\CTEX\MiKTeX\tex\generic\pstricks\config\xdvipdfmx.cfg))
+\psunit=\dimen121
+\psxunit=\dimen122
+\psyunit=\dimen123
+\pst@C@@rType=\count114
+\pslinewidth=\dimen124
+\psk@startLW=\dimen125
+\psk@endLW=\dimen126
+\pst@customdefs=\toks28
+\pslinearc=\dimen127
+\pst@symbolStep=\dimen128
+\pst@symbolWidth=\dimen129
+\everypsbox=\toks29
+\psframesep=\dimen130
+\pslabelsep=\dimen131
+\pst@shift=\dimen132
+\theoverlaybox=\box34
+
+(D:\CTEX\MiKTeX\tex\xelatex\xetex-pstricks\pstricks.con
+(D:\CTEX\MiKTeX\tex\generic\pstricks\config\xdvipdfmx.cfg
+Using PSTricks configuration for XeTeX+xdvipdfmx
+)))
+File: pstricks.tex 2012/02/09 v2.24 `PSTricks' (tvz,hv)
+ (D:\CTEX\MiKTeX\tex\generic\pstricks\base\pst-fp.tex)
+File: pst-fp.tex 2012/02/09 v2.24 `PST-fp' (hv)
+
+(D:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(D:\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def
+File: xetex.def 2009/11/22 v0.94 LaTeX color/graphics driver for XeTeX (RRM/JK)
+
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(D:\CTEX\MiKTeX\tex\latex\seminar\semcolor.sty
+Style Option: `semcolor' for doc style `seminar' 1.01 <2004/05/18> (tvz)
+File: semcolor.sty 2004/05/18 v1.01 (tvz)
+) (D:\CTEX\MiKTeX\tex\latex\graphics\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: xetex.def on input line 91.
+)
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
+)
+\epsfxsize=\dimen135
+\epsfysize=\dimen136
+)
+(D:\CTEX\MiKTeX\tex\latex\epsf\epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read2
+\epsfframemargin=\dimen137
+\epsfframethickness=\dimen138
+\epsfrsize=\dimen139
+\epsftmp=\dimen140
+\epsftsize=\dimen141
+\epsfxsize=\dimen142
+\epsfysize=\dimen143
+\pspoints=\dimen144
+) (D:\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count115
+\float@exts=\toks30
+\float@box=\box35
+\@float@everytoks=\toks31
+\@floatcapt=\box36
+)
+(D:\CTEX\MiKTeX\tex\latex\psnfss\pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(D:\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+Requested font "pzdr" at 10.0pt
+ -> pzdr
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(D:\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)
+Requested font "psyr" at 10.0pt
+ -> psyr
+)
+
+! LaTeX Error: File `/home/hastie/texlib/MRCII.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: s
+
+! LaTeX Error: File `s.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: s
+
+! LaTeX Error: File `s.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: s
+
+! LaTeX Error: File `s.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: f
+
+! LaTeX Error: File `f.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: g
+
+! LaTeX Error: File `g.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: t
+
+! LaTeX Error: File `t.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: t
+
+! LaTeX Error: File `t.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: t
+
+! LaTeX Error: File `t.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(D:\CTEX\MiKTeX\tex\latex\psfrag\psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count116
+\pfg@scount=\count117
+\pfg@temp=\write4
+)
+(D:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(D:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks32
+\ex@=\dimen145
+))
+(D:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen146
+)
+(D:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count118
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count119
+\leftroot@=\count120
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count121
+\DOTSCASE@=\count122
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box37
+\strutbox@=\box38
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count123
+\c@MaxMatrixCols=\count124
+\dotsspace@=\muskip10
+\c@parentequation=\count125
+\dspbrk@lvl=\count126
+\tag@help=\toks33
+\row@=\count127
+\column@=\count128
+\maxfields@=\count129
+\andhelp@=\toks34
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks35
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+No file a.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+Requested font "cmr12" at 12.0pt
+ -> cmr12
+! Undefined control sequence.
+<recently read> \heading 
+                         
+l.45   \heading
+               {Principal Components}
+? t
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? t
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? t
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+Requested font "cmex7" at 7.0pt
+ -> cmex7
+Requested font "cmex7" at 5.0pt
+ -> cmex7
+! Undefined control sequence.
+l.48 \bitem
+            Given $X=(X_1,\ldots X_p)$, produce a derived (and small) set of...
+
+? 
+! Undefined control sequence.
+l.49 \bitem
+            Approximate the original set of $N$ points in $\R^p$ by a least-...
+
+? 
+! Undefined control sequence.
+<recently read> \R 
+                   
+l.49 ...mate the original set of $N$ points in $\R
+                                                  ^p$ by a least-squares opt...
+
+? 
+! Undefined control sequence.
+l.50 \bitem
+            Approximate the $
